@@ -1,14 +1,14 @@
 
 public class input {
-	private int salary;
+	private int salary,salarymounth;
 	private String name,id;
 	
 	public input() {
 		
 	}
 
-	public input(int salary, String name, String id) {
-		
+	public input(int salary, String name, String id,int salarymounth) {
+		this.salarymounth = salarymounth;
 		this.salary = salary;
 		this.name = name;
 		this.id = id;
@@ -36,6 +36,14 @@ public class input {
 
 	public void setId(String id) {
 		this.id = id;
+	}
+
+	public int getSalarymounth() {
+		return salarymounth;
+	}
+
+	public void setSalarymounth(int salarymounth) {
+		this.salarymounth = salarymounth;
 	}
 	
 	
