@@ -9,14 +9,17 @@ public class process {
 	
 	public process(input emp) {
 		int sa=0;
-		if(emp.getSalary() >=1 && emp.getSalary()<=100000) {
+		if(emp.getSalarymounth() >=1 && emp.getSalarymounth()<=50000) {
 		 sa=(int) ((5/100.0)*emp.getSalarymounth());
 		 sa=sa+emp.getSalary();
 		}else {
 			sa=(int) ((10/100.0)*emp.getSalarymounth());
-			 sa=sa+emp.getSalary();
+			sa=sa+emp.getSalary();
 		}
+		
+		
 		this.sa=sa;
+		
 	}
 
 	public int getSa() {
