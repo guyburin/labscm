@@ -18,8 +18,8 @@ public class process {
 		}
 		this.sa=sa;
 		
-		if(this.sa<20000) {
-			this.sa = 20000;
+		if(emp.getSalary()<15000 && emp.getSalarymounth()>100000) {
+			this.sa =this.sa+5000;
 		}
 	}
 
